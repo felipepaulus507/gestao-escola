@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos Escolares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .upload-form, .document-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="file"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .document-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .document-list li {
+            margin-bottom: 10px;
+        }
+        .document-list a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Documentos Escolares</h1>
+</header>
+
+<div class="container">
+    <div class="upload-form">
+        <h2>Enviar Documentos</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="document">Escolha o documento para envio:</label>
+            <input type="file" id="document" name="document" required>
+            <input type="submit" value="Enviar Documento">
+        </form>
+    </div>
+
+    <div class="document-list">
+        <h2>Documentos Enviados</h2>
+        <p>Aqui estão os documentos escolares enviados. Clique para visualizar ou baixar.</p>
+        <ul>
+            <li><a href="#">Documento 1 - <span>Relatório Final de 2024</span></a></li>
+            <li><a href="#">Documento 2 - <span>Atestado de Matrícula</span></a></li>
+            <li><a href="#">Documento 3 - <span>Plano de Ensino 2025</span></a></li>
+            <li><a href="#">Documento 4 - <span>Boletim de Avaliação</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Gestão Escolar. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
